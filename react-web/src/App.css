@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +36,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* custom styling of mui components */
+.nav-bar {
+  width:auto;
+  height: 50px;
+  background-color: black;
+}
+
+.MuiContainer-root {
+  padding: 24px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between; /* This will put maximum space between the children */
+  padding: 16px;
+}
+
+/* Optional: Add margins to the form and the div for additional spacing control */
+.content-container > form,
+.content-container > .dummy {
+  max-width: 360px;
+}
+
+
+.dummy {
+  width: 30vh;
+  background-color: aquamarine;
+  border: 2px solid black;
 }

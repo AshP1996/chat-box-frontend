@@ -3,7 +3,7 @@ import { TextField, Button, Container, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import '../App.css'
 
-const Login = ({ onLogin }) => {
+const Home = ({ onLogin }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -14,9 +14,9 @@ const Login = ({ onLogin }) => {
 
   return (
     <>
-      <Container maxWidth="sm">        
+      <Container maxWidth="sm">
+        <Typography variant="h4">Login</Typography>
         <form onSubmit={handleLogin}>
-          <Typography variant="h4" >Login</Typography>
           <TextField
             label="Email"
             variant="outlined"
@@ -48,4 +48,4 @@ const Login = ({ onLogin }) => {
   );
 };
 
-export default Login;
+export default Home;
